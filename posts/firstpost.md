@@ -1,26 +1,15 @@
 ---
-title: This is my first post.
-description: This is a post on My Blog about agile frameworks.
-date: 2018-05-01
+title: Let's document some things.
+description: This is a post on my Smarter Camper Blog.
+date: 2020-02-09
 tags:
-  - another-tag
+  - geek-stuff
 layout: layouts/post.njk
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+In which your intrepid adventurer sets forth into the unfamiliar waters of the Eleventy static site generator in hopes of creating a simple site to document all of this stuff.
+2
+Nothing is simple in 2020. Hours were lost tonight, never to be recovered, chasing down why Eleventy would not build correctly locally. Turns out an old version of Node.js on the trusty-but-ancient laptop was breaking the builds. Because of course it is. 
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+It takes a lot of work to write HTML these days.
 
-## Section Header
-
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
-
-``` text/2-3
-// this is a command
-function myCommand() {
-	let counter = 0;
-	counter++;
-}
-
-// Test with a line break above this line.
-console.log('Test');
-```
+But if you're seeing this, it worked. Hooray for pigheaded perserverance.
