@@ -21,3 +21,5 @@ But wait a minute... checking the wires that were running to the trailer closet,
 So checking the lines coming from the power supply, it looks like I had hooked into the wrong one out of two possible supply lines. Flip them around and now I'm seeing 13 volts again, even all the way over by the closet. Now we're getting somewhere, and there's no voltage drop problem after all.
 
 After test fitting everything, I was still seeing a clean 5v coming out of the converter. This is progress So -- fingers crossed -- I plugged in the Pi. Success!
+
+<img src="/img/feb-2020/success.png" alt="Successfully SSH-ing into the Pi" />
