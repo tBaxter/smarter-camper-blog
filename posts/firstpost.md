@@ -1,6 +1,6 @@
 ---
 title: Let's document some things.
-description: This is a post on my Smarter Camper Blog.
+description: In which your intrepid adventurer tries Eleventy
 date: 2020-02-09
 tags:
   - geek-stuff
