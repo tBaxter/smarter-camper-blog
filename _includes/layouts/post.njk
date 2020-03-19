@@ -2,6 +2,10 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-{{ content | safe }}
+{% block main %}
+    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+      {{ content | safe }}
+    </main
+{% endblock %}
 
 <p><a href="{{ '/' | url }}">← Home</a></p>

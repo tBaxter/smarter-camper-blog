@@ -1,12 +1,12 @@
 {
   "title": "The Smarter Camper",
-  "url": "https://myurl.com/",
+  "url": "https://www.smartercamper.com/",
   "description": "Documenting my steps toward a smarter camper.",
   "feed": {
     "subtitle": "Documenting my steps toward a smarter camper.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://myurl.com/"
+    "id": "https://www.smartercamper.com/"
   },
   "author": {
     "name": "Carter Baxter",

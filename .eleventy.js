@@ -18,6 +18,15 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
   });
+  eleventyConfig.addFilter("formattedDate", dateObj => {
+    var day = DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd");
+    var mo = DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("LLL");
+    var year = DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("yyyy");
+    return('<span class="mo">' + mo + '</span> ' +
+      '<span class="day">' + day + '</span> ' +
+      '<span class="year">' + year + '</span>'
+    );
+  });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {

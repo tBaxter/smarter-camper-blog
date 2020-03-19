@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One');
+
 :root {
-  --red: #C5004A;
-  --darkred: #7F0036;
   --lightgray: #e0e0e0;
   --gray: #C0C0C0;
-  --darkgray: #333;
+  --darkgray: #444;
   --navy: #17050F;
-  --blue: #082840;
+  --blue: #2d9aa1;
   --white: #fff;
+  --accent-primary: rgb(192, 35, 11);
+  --accent-complement: #EDBE02;
+  --accent-secondary: #4BD1CC;
+  --accent-tertiary: #BCA6E0;
 }
 * {
   box-sizing: border-box;
@@ -22,11 +26,13 @@ body {
 p:last-child {
   margin-bottom: 0;
 }
+header > *,
+.hero > *,
 main,
 p,
 .tmpl-post li,
 img {
-  max-width: 37.5em; /* 600px /16 */
+  max-width: 44.5rem; /* 600px /16 */
 }
 p,
 .tmpl-post li {
@@ -38,6 +44,16 @@ a[href] {
 a[href]:visited {
   color: var(--navy);
 }
+
+h1, h2, h3 {
+  font-family: 'Alfa Slab one', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 1px;
+}
+p {margin: 0}
+p + p {margin-top: 1em}
+
+header > *,
+.hero > *,
 main {
   padding: 1rem;
   margin: 0 auto;
@@ -46,13 +62,31 @@ main :first-child {
   margin-top: 0;
 }
 header {
-  border-bottom: 1px dashed var(--lightgray);
+  border-width: 0 0 1px;
+  border-image: linear-gradient(60deg, var(--darkgray), var(--gray), var(--gray), #555) 1;
+}
+header > * {
+  padding: 0.5em;
 }
 header:after {
   content: "";
   display: table;
   clear: both;
 }
+
+.hero {
+  background-color: var(--accent-primary);
+  color: var(--white); 
+  font-size: 1.25em;
+  line-height: 2.75em;
+  -webkit-text-stroke: 1px var(--darkgray);
+  border-width: 4px 0 2px;
+  border-image: linear-gradient(60deg, var(--gray), var(--lightgray), var(--lightgray), #777) 1;
+}
+.hero > * {
+  padding-right: 5%;
+}
+
 table {
   margin: 1em 0;
 }
@@ -61,10 +95,20 @@ table th {
   padding-right: 1em;
 }
 
+
+a[href*='github.com'],
 pre,
 code {
   font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
   line-height: 1.5;
+  background: #f6f6f6;
+  border:1px dotted #ddd;
+  padding: 0 4px;
+  background: black;
+  color: lightgreen;
+}
+a[href*='github.com']:visited {
+  color: lightseagreen;
 }
 pre {
   font-size: 14px;
@@ -118,10 +162,10 @@ pre {
 
 /* Header */
 .home {
-  padding: 0 1rem;
-  float: left;
-  margin: 1rem 0; /* 16px /16 */
-  font-size: 1em; /* 16px /16 */
+  display: inline-block;
+  font-size: 1.5em; /* 16px /16 */
+  margin: 0.25em 0;
+  font-weight: normal;
 }
 .home :link:not(:hover) {
   text-decoration: none;
@@ -129,9 +173,8 @@ pre {
 
 /* Nav */
 .nav {
-  padding: 0;
   list-style: none;
-  float: left;
+  float: right;
   margin-left: 1em;
 }
 .nav-item {
@@ -151,35 +194,63 @@ pre {
   list-style: none;
   padding: 0;
 }
-.postlist-item {
-  counter-increment: start-from -1;
+
+.postlist-date {
+  float: left;
+  clear: left;
+  width: 3.75rem; 
+  height: 3.75rem;
+  margin: 0 0.75em 1em 0;
+  background: radial-gradient(#fff 30%, #ccc 100%); 
+  border: 1px solid #d6d6d6;
+  border-radius: 4rem;
+  text-align: center; 
+  overflow:hidden;
+  background: radial-gradient(#fff 30%, #ccc 100%); 
+
 }
-.postlist-item:before {
-  display: inline-block;
-  pointer-events: none;
-  content: "" counter(start-from, decimal-leading-zero) ". ";
-  line-height: 100%;
-  text-align: right;
+.postlist-date .mo {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.675em;
+  background: radial-gradient(#ddd 60%, #999 100%); 
+  width: 8rem;
+  height: 8rem;
+  margin-top:-6.75rem;
+  margin-left: -2.15rem;
+  padding: 7rem 0 0px;
+  border-radius: 5rem;
+
 }
-.postlist-date,
-.postlist-item:before {
-  font-size: 0.8125em; /* 13px /16 */
+.postlist-date .day {
+  font-size: 1.75rem;
+  display: block;
+  font-weight: bold;
+  padding: 1px;
+}
+
+.postlist h4 {
+  font-weight: bold;
+  font-size: 1.75em;
+  margin-bottom: 0;
+}
+.postlist h4 a {
+  text-decoration: none;
   color: var(--darkgray);
 }
-.postlist-date {
-  word-spacing: -0.5px;
+.postlist h4 a:hover,
+.postlist h4 a:active {
+  color: var(--blue)
 }
-.postlist-link {
-  display: inline-block;
-  padding: 0.25em 0.1875em; /* 4px 3px /16 */
+.postlist h4 a:visited {
+  color: #777;
 }
-.postlist-item-active .postlist-link {
-  font-weight: bold;
+.postlist .tags {
+  display: block;
+  text-align: right;
 }
-.tmpl-home .postlist-link {
-  font-size: 1.1875em; /* 19px /16 */
-  font-weight: 700;
-}
+
 
 
 /* Tags */
@@ -190,7 +261,7 @@ pre {
   font-size: 0.625em; /* 10px /16 */
   padding: 2px 4px;
   margin-left: 0.8em; /* 8px /10 */
-  background-color: var(--red);
+  background-color: var(--accent-secondary);
   color: var(--white);
   border-radius: 0.25em; /* 3px /12 */
   text-decoration: none;
