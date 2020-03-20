@@ -1,10 +1,11 @@
 ---
 title: Setting up a local web server on your Raspberry Pi
 description: In which your intrepid adventurer begins setting up a web page to monitor things
-date: 2020-03-16
+date: 2020-03-17
 tags:
-  - nuts-and-bolts
+  - web
   - software
+  - interface
 layout: layouts/post.njk
 ---
 

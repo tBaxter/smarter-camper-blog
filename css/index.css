@@ -104,8 +104,9 @@ code {
   background: #f6f6f6;
   border:1px dotted #ddd;
   padding: 0 4px;
-  background: black;
-  color: lightgreen;
+  background: #eee;
+  color: green;
+  border-radius: 0.25em;
 }
 a[href*='github.com']:visited {
   color: lightseagreen;
@@ -127,7 +128,13 @@ pre {
   hyphens: none;
   padding: 1em;
   margin: .5em 0;
-  background-color: #f6f6f6;
+  background: #333;
+  color: lightgreen;
+}
+pre code {
+  border:0;
+  background: transparent;
+  color: lightgreen;
 }
 .highlight-line {
   display: block;
