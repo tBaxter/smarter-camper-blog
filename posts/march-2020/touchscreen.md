@@ -1,7 +1,7 @@
 ---
 title: Introducing the touchscreen
-description: In which your intrepid adventurer adds a 15-inch-touchscreen.
-date: 2020-03-24
+description: In which your intrepid adventurer adds a 15-inch-touchscreen to a 1972 Eco trailer.
+date: 2020-03-23
 tags:
   - hardware
   - nuts-and-bolts
