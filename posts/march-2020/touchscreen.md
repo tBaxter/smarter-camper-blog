@@ -46,7 +46,7 @@ I'm hoping when I couple that with a [low-profile USB-C cord](https://amzn.to/2U
 
 As for actually mounting the monitor, that part was pretty simple. I found a [VESA mount template](http://geldner.com/wp-content/uploads/2016/11/VESA-100mm-75mm-Template.pdf) online and taped it to the door to figure out where to drill.
 
-<img src="/img/mar-2020/vesa-mount.png" alt="vesa mount template" />
+<img src="/img/mar-2020/vesa-template.png" alt="vesa mount template" />
 
 Of course, it's hard finding anything level or square in one of these old trailers, and it was tricky accounting for where the hole for the cords needed to be. If I was doing it again I'd figure out how to put the template on a monitor-sized piece of paper, so I could get a better sense of the overall positioning of things, rather than just the mount points.
 
