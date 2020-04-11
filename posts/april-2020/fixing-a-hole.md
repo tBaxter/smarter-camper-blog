@@ -1,6 +1,6 @@
 ---
 title: Fixing a hole
-description: In which your intrepid adventurer fixes a hole he create. 
+description: In which your intrepid adventurer fixes a hole he created. 
 date: 2020-04-07
 tags:
   - nuts-and-bolts
