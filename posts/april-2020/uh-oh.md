@@ -2,6 +2,7 @@
 title: Uh-oh
 description: In which your intrepid adventurer breaks everything and learns the hard way about some quirks of the Raspberry Pi.
 date: 2020-04-08
+mod_date: 2020-04-11
 tags:
   - pi
   - software
@@ -39,3 +40,6 @@ deb https://downloads.plex.tv/repo/deb public main```
 8. And upgrade: `sudo apt-get upgrade`. In the past I've cleaned up some unneeded packages, but honestly, it's probably not worth it. They're not hurting anything, really.
 9. Ensure the external drive [is mounted and will mount automatically](https://www.raspberrypi.org/documentation/configuration/external-storage.md).
 10. Ensure Plex can read AND write to the folder the movies are in, so I can optimize them and such later. `sudo chmod 775 /mnt/Movies`
+11. Reset the resolution to 1440x900 (at 1920 it's too fine for fat fingers)
+12. Enable 1-wire interfacing, either through the `raspi-config` "interfacing" option or by manually editing the config.
+13. Follow [my own instructions to re-install the code](/posts/march-2020/local-web-server/)
