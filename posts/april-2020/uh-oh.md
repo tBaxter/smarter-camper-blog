@@ -24,22 +24,4 @@ I get some small slack because the power supply issues were largely due to the i
 
 And then I had to remember all the steps I had taken to set that card up. For future reference, I'm trying to document those steps here...
 
-### Setting up the Pi from scratch
-There are a million and two ways to do it, but here are my steps (recorded here for my own future reference as much as anything).
-
-1. Use [Raspberry Pi Imager](https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/) to install Raspbian on a good-quality, 32GB SD card. It's a wonderfully simple solution. I continue to debate using Raspian-lite and forgo the GUI in favor of more power for Plex. But for now, I keep it.
-2. Put the new card in the Pi and boot up. Assuming it starts OK, go through the first-run setup steps.
-3. Set a good password.
-4. [Be sure to enable SSH](https://pimylifeup.com/raspberry-pi-ssh/#enablesshdesktop)
-5. [Follow the steps to prep for Plex server installation](https://pimylifeup.com/raspberry-pi-plex-server/):```sudo apt-get install apt-transport-https
-curl https://downloads.plex.tv/plex-keys/PlexSign.key | sudo apt-key add -
-echo deb https://downloads.plex.tv/repo/deb public main | sudo tee /etc/apt/sources.list.d/plexmediaserver.list
-deb https://downloads.plex.tv/repo/deb public main```
-6. Update packages: `sudo apt-get update`.
-7. Now get the Plex server: `sudo apt-get install plexmediaserver`
-8. And upgrade: `sudo apt-get upgrade`. In the past I've cleaned up some unneeded packages, but honestly, it's probably not worth it. They're not hurting anything, really.
-9. Ensure the external drive [is mounted and will mount automatically](https://www.raspberrypi.org/documentation/configuration/external-storage.md).
-10. Ensure Plex can read AND write to the folder the movies are in, so I can optimize them and such later. `sudo chmod 775 /mnt/Movies`
-11. Reset the resolution to 1440x900 (at 1920 it's too fine for fat fingers)
-12. Enable 1-wire interfacing, either through the `raspi-config` "interfacing" option or by manually editing the config.
-13. Follow [my own instructions to re-install the code](/posts/march-2020/local-web-server/)
+_Edit: Originally I included setup instructions here, but they've grown enought to [merit their own page](../definitive-setup-guide.md)._
