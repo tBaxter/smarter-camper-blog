@@ -5,11 +5,11 @@ date: 2020-05-26
 mod_date: 2020-05-26
 tags:
   - pi
-  - software
   - nuts-and-bolts
   - audio
 layout: layouts/post.njk
 ---
+# Let's hear it for the Pi
 It has been a month or more of trials, setbacks, false starts and dead ends. Apparently, if doing this sort of DIY RV home automation and media center thing was easy, more people would have done it already. 
 
 And getting usable audio in the trailer was definitely one of the big hurdles, even before I [ruined the Pi SD card and had to start over](/posts/april-2020/uh-oh/).
