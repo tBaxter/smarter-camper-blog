@@ -30,14 +30,4 @@ Then I bought a [noise isolator](https://amzn.to/2ZQVWZJ) which also helped, but
 
 I mucked around with the power feed, with all sorts of settings (both in hardware and with software) and generally tried everything until finally I figured that everything was playing nicely, albeit with low volume, except the amp. So I broke down and bought another amp.
 
-And this turned out to be a [nice little amp for the purpose](https://amzn.to/2TIMYcV). The noise problem was gone immediately, it's plenty loud for the trailer and the sound quality is pretty good, even through the diminutive speakers. I'm happy.
-
-
-
-amp
-speakers
-expansion board
-hifiberry
-    Setup: https://www.hifiberry.com/docs/software/configuring-linux-3-18-x/
-airplay
-
+And this turned out to be a [nice little amp for the purpose](https://amzn.to/2TIMYcV). The noise problem was gone immediately, it's plenty loud for the trailer and the sound quality is pretty good, even through the diminutive speakers. It turns out the original Kintner amp was just trash, which is why I won't link to it. The new amp works great, though. I'm happy.
