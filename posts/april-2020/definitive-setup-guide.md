@@ -2,7 +2,7 @@
 title: My definitive guide to setting up a Pi from scratch
 description: In which your intrepid adventurer attempts to document all the setup steps to make a Pi Smart Camper-ready (updated as needed).
 date: 2020-04-21
-mod_date: 2020-04-21
+mod_date: 2020-05-11
 tags:
   - pi
   - software
@@ -37,4 +37,11 @@ deb https://downloads.plex.tv/repo/deb public main```
 1. Reset the resolution to 1440x900 (at 1920 it's too fine for fat fingers)
 2. Enable 1-wire interfacing, either through the `raspi-config` "interfacing" option or by manually editing the config.
 3. [Install xscreensaver](https://www.raspberrypi.org/documentation/configuration/screensaver.md). It's by far the easiest way to control when the Pi and display go to sleep.
-4. Follow [my own instructions to re-install the web server and monitoring page](/posts/march-2020/local-web-server/)
+
+### Code setup
+1. Pull my smarter camper code from the repo.
+2. Make sure it's on pythonpath: `export PYTHONPATH="${PYTHONPATH}:$HOME/var/www"`
+3. And just to be sure, put it in `~/.bashrc` too.
+4. Pip install dependencies from the repo's requirements file: `pip3 install -r REQUIREMENTS.txt`
+5. Set environment variables for services we're using. See settings.py for details.
+6. Follow [my remaining instructions to re-install the web server and monitoring page](/posts/march-2020/local-web-server/)
